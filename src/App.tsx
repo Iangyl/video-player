@@ -6,9 +6,10 @@ import LogsBox from 'LogsBox';
 function App() {
   const [data, setData] = React.useState<string[]>([]);
 
-  const handleListen = (value: number) => {
+  const handleListen = (value: string) => {
     setData([...data, value.toString()]);
   };
+
   return (
     <Container>
       <Typography sx={{ marginTop: 20, marginBottom: 15 }} variant="h2">
