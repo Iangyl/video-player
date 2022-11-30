@@ -22,6 +22,7 @@ export default function APlayer(props: {
           timeConvert(e!.target!.currentTime!.toString().split('.')[0])
         )
       }
+      onVolumeChange={() => props.handleListen('Volume was changed!')}
     />
   );
 }
